@@ -102,10 +102,10 @@ Prints "PDF generated" to the console to indicate successful completion.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Helper Methods</h3>
-<h5>texCell: </h5><h6>Creates a right-aligned bold cell with no border.
+<h5>texCell: </h5><h6>Creates a right-aligned bold cell with no border.</h6>
 <h5>textValue:</h5> Creates a left-aligned cell with no border.
-<h5>billingAndShipping:</h5>h5> Creates a styled cell for billing and shipping headers.
-<h5>getCellleft: </h5>h5>Creates a left-aligned cell with optional bold styling.</h6>
+<h5>billingAndShipping:</h5> Creates a styled cell for billing and shipping headers.
+<h5>getCellleft: </h5>Creates a left-aligned cell with optional bold styling.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Product Class</h3>
