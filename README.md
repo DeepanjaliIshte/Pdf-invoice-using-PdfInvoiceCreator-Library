@@ -75,7 +75,7 @@ A divider table with this border is added to the document.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Product Table Header </h3>
-<h4>productParagraph:</h4>]<h6> Creates a paragraph to act as the header for the product section, styled with bold red text.
+<h4>productParagraph:</h4><h6> Creates a paragraph to act as the header for the product section, styled with bold red text.
 <h4>threeTable:</h4> A table with three columns is created, with a cyan background color.<br>
 Adds header cells for "Description", "Quantity", and "Price" to the product table.</h6>
 
