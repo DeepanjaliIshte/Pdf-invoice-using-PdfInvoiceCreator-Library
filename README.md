@@ -17,22 +17,22 @@ throws FileNotFoundException, MalformedURLException: The method declares that it
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Adding a Watermark </h3>
-<h4>imagePath:</h4><h6>Path to the image that will be used as a watermark.<br>
-<h4>ImageDataFactory.create(imagePath):</h4> Loads the image data from the specified path.<br>
-<h4>Image:</h4> Creates an Image object that will be used to add the watermark to the PDF.<br>
-<h4>x, y:</h4> Calculate the center position of the page.<br>
-<h4>setFixedPosition:</h4> Positions the image at the specified coordinates, adjusted by offsets.<br>
-<h4>setOpacity(0.4f):</h4> Sets the transparency level of the watermark.<br>
-<h4>document.add(image):</h4> Adds the image to the PDF.<br></h6>
+<h4>imagePath:</h4><h6>Path to the image that will be used as a watermark.<br></h6>
+<h4>ImageDataFactory.create(imagePath):</h4> <h6>Loads the image data from the specified path.<br></h6>
+<h4>Image:</h4> <h6>Creates an Image object that will be used to add the watermark to the PDF.<br></h6>
+<h4>x, y:</h4><h6> Calculate the center position of the page.<br></h6>
+<h4>setFixedPosition:</h4> <h6>Positions the image at the specified coordinates, adjusted by offsets.<br></h6>
+<h4>setOpacity(0.4f):</h4> <h6>Sets the transparency level of the watermark.<br></h6>
+<h4>document.add(image):</h4><h6>Adds the image to the PDF.<br></h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3> Defining Column Widths</h3>
 <h4>These variables define different column widths used in the tables within the PDF:</h4>
-<h4>twocolumn:</h4> <h6> Width for two columns.<br>
-<h4>twocolumn140:</h4> Adjusted width for a wider two-column layout.<br>
-<h4>threecolumn:</h4> Width for three columns.<br>
-<h4>fullwidth:</h4>Width spanning across the full page width.<br>
-<h4>threecolumnwidth:</h4>Array defining three equally spaced columns.</h6>
+<h4>twocolumn:</h4> <h6> Width for two columns.<br></h6>
+<h4>twocolumn140:</h4> <h6>Adjusted width for a wider two-column layout.<br></h6>
+<h4>threecolumn:</h4><h6> Width for three columns.<br></h6>
+<h4>fullwidth:</h4><h6>Width spanning across the full pge width.<br></h6>
+<h4>threecolumnwidth:</h4><h6>Array defining three equally spaced columns.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Adding a Paragraph for Spacing </h3>
@@ -40,13 +40,13 @@ throws FileNotFoundException, MalformedURLException: The method declares that it
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Invoice Header</h3>
-<h4>Table:</h4><h6> Creates a new table with the specified column widths.<br>
-<h4>addCell:</h4> Adds a new cell to the table with the "Invoice" label, sets the font size, removes the border, makes the text bold, and sets the font color to magenta.</h6>
+<h4>Table:</h4><h6> Creates a new table with the specified column widths.<br></h6>
+<h4>addCell:</h4><h6> Adds a new cell to the table with the "Invoice" label, sets the font size, removes the border, makes the text bold, and sets the font color to magenta.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3> Invoice Details</h3>
-<h4>nestedTable:</h4> <h6>Creates a nested table with two equally spaced columns.<br>
-<h4>texCell, textValue: </h4>Helper methods (defined later) are used to create styled cells for the invoice number and date.
+<h4>nestedTable:</h4> <h6>Creates a nested table with two equally spaced columns.<br></h6>
+<h4>texCell, textValue: </h4><h6>Helper methods (defined later) are used to create styled cells for the invoice number and date.
 The nested table is added as a cell to the main invoice table.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -60,8 +60,8 @@ The nested table is added as a cell to the main invoice table.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Billing and Shipping Information </h3>
-<h6><h4>billingAndShipping: </h4>A helper method to create a styled cell with "Billing Information" and "Shipping Information" headers.<br>
-setMarginBottom: Adds some margin below the table.</h6>
+<h4>billingAndShipping: </h4><h6>A helper method to create a styled cell with "Billing Information" and "Shipping Information" headers.<br>
+<h4>setMarginBottom:</h4><h6> Adds some margin below the table.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Additional Billing and Shipping Details </h3>
@@ -91,9 +91,9 @@ Adds a table with the "Total" label and the calculated totalSum on the right.</h
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Terms and Conditions </h3>
-<h6>Adds a divider line and a blank paragraph for spacing.<br>
-<h4>table7:</h4>h4> Creates a table for the terms and conditions section and adds a bold red header.<br>
-<h4>TncList: </h4>h4>Creates a list of strings representing the terms and conditions.<br>
+<h6>Adds a divider line and a blank paragraph for spacing.<br></h6>
+<h4>table7:</h4> <h6>Creates a table for the terms and conditions section and adds a bold red header.<br></h6>
+<h4>TncList: </h4><h6>Creates a list of strings representing the terms and conditions.<br>
 Loops through the TncList and adds each term as a cell in the terms and conditions table.</h6>
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Closing the Document</h3>
@@ -103,9 +103,9 @@ Prints "PDF generated" to the console to indicate successful completion.</h6>
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Helper Methods</h3>
 <h4>texCell: </h4><h6>Creates a right-aligned bold cell with no border.</h6>
-<h4>textValue:</h4> Creates a left-aligned cell with no border.
-<h4>billingAndShipping:</h4> Creates a styled cell for billing and shipping headers.
-<h4>getCellleft: </h4>Creates a left-aligned cell with optional bold styling.</h6>
+<h4>textValue:</h4><h6> Creates a left-aligned cell with no border.</h6>
+<h4>billingAndShipping:</h4> <h6>Creates a styled cell for billing and shipping headers.</h6>
+<h4>getCellleft: </h4><h6>Creates a left-aligned cell with optional bold styling.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Product Class</h3>
