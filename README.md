@@ -4,69 +4,69 @@ FF# Pdf-invoice-using-PdfInvoiceCreator-Library
 
 <h3>GeneratePDF: </h3>
 <h6>This is the main class that contains all the logic to generate a PDF file.<br>
-main(String[] args): The main method where the program starts executing.<br>
+<h4>main(String[] args):</h4>The main method where the program starts executing.<br>
 throws FileNotFoundException, MalformedURLException: The method declares that it might throw these exceptions, which are checked exceptions in Java.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>PDF Setup </h3>
-path: This variable holds the path where the PDF file will be saved.
-PdfWriter: This creates a writer instance that writes the PDF to the file specified by path.
-PdfDocument: This represents the PDF document itself.
-setDefaultPageSize(PageSize.A4): Sets the page size of the PDF to A4.
-Document: This is the main class to add content (like paragraphs, tables, etc.) to the PDF.
+<h6><h4>path:</h4> This variable holds the path where the PDF file will be saved.<br>
+<h4>PdfWriter:</h4> This creates a writer instance that writes the PDF to the file specified by path.<br>
+<h4>PdfDocument:</h4> This represents the PDF document itself.<br>
+<h4>setDefaultPageSize(PageSize.A4):</h4> Sets the page size of the PDF to A4.<br>
+<h4>Document:</h4> This is the main class to add content (like paragraphs, tables, etc.) to the PDF.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Adding a Watermark </h3>
-imagePath: Path to the image that will be used as a watermark.
-ImageDataFactory.create(imagePath): Loads the image data from the specified path.
-Image: Creates an Image object that will be used to add the watermark to the PDF.
-x, y: Calculate the center position of the page.
-setFixedPosition: Positions the image at the specified coordinates, adjusted by offsets.
-setOpacity(0.4f): Sets the transparency level of the watermark.
-document.add(image): Adds the image to the PDF.
+<h4>imagePath:</h4><h6>Path to the image that will be used as a watermark.<br>
+<h4>ImageDataFactory.create(imagePath):</h4> Loads the image data from the specified path.<br>
+<h4>Image:</h4> Creates an Image object that will be used to add the watermark to the PDF.<br>
+<h4>x, y:</h4> Calculate the center position of the page.<br>
+<h4>setFixedPosition:</h4> Positions the image at the specified coordinates, adjusted by offsets.<br>
+<h4>setOpacity(0.4f):</h4> Sets the transparency level of the watermark.<br>
+<h4>document.add(image):</h4> Adds the image to the PDF.<br></h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3> Defining Column Widths</h3>
-These variables define different column widths used in the tables within the PDF:
-twocolumn: Width for two columns.
-twocolumn140: Adjusted width for a wider two-column layout.
-threecolumn: Width for three columns.
-fullwidth: Width spanning across the full page width.
-threecolumnwidth: Array defining three equally spaced columns.
+<h4>These variables define different column widths used in the tables within the PDF:</h4>
+<h4>twocolumn:</h4> <h6> Width for two columns.<br>
+<h4>twocolumn140:</h4> Adjusted width for a wider two-column layout.<br>
+<h4>threecolumn:</h4> Width for three columns.<br>
+<h4>fullwidth:</h4>Width spanning across the full page width.<br>
+<h4>threecolumnwidth:</h4>Array defining three equally spaced columns.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Adding a Paragraph for Spacing </h3>
-Paragraph: Creates a new paragraph with a newline character for adding vertical spacing in the document.
+<h4>Paragraph:</h4></h6> Creates a new paragraph with a newline character for adding vertical spacing in the document.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Invoice Header</h3>
-Table: Creates a new table with the specified column widths.
-addCell: Adds a new cell to the table with the "Invoice" label, sets the font size, removes the border, makes the text bold, and sets the font color to magenta.
+<h4>Table:</h4><h6> Creates a new table with the specified column widths.<br>
+<h4>addCell:</h4> Adds a new cell to the table with the "Invoice" label, sets the font size, removes the border, makes the text bold, and sets the font color to magenta.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3> Invoice Details</h3>
-nestedTable: Creates a nested table with two equally spaced columns.
-texCell, textValue: Helper methods (defined later) are used to create styled cells for the invoice number and date.
-The nested table is added as a cell to the main invoice table.
+<h4>nestedTable:</h4> <h6>Creates a nested table with two equally spaced columns.<br>
+<h4>texCell, textValue: </h4>Helper methods (defined later) are used to create styled cells for the invoice number and date.
+The nested table is added as a cell to the main invoice table.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3> Divider Line</h3>
-SolidBorder: Creates a solid border with a thickness of 1.8f and color cyan.
-divider: Creates a table that serves as a divider line across the page.
+<h6><h4>SolidBorder: </h4>Creates a solid border with a thickness of 1.8f and color cyan.<br>
+<h4>divider: </h4>Creates a table that serves as a divider line across the page.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Adding Tables and Information to the Document </h3>
-document.add: These lines add the invoice table, divider line, and spacing paragraph to the document.
+<h4>document.add:</h4><h6> These lines add the invoice table, divider line, and spacing paragraph to the document.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Billing and Shipping Information </h3>
-billingAndShipping: A helper method to create a styled cell with "Billing Information" and "Shipping Information" headers.
-setMarginBottom: Adds some margin below the table.
+<h6><h4>billingAndShipping: </h4>A helper method to create a styled cell with "Billing Information" and "Shipping Information" headers.<br>
+setMarginBottom: Adds some margin below the table.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Additional Billing and Shipping Details </h3>
-getCellleft: A helper method used to create cells with left-aligned text.
-These tables add the company, name, address, and email details for both billing and shipping information.
+<h4>getCellleft:</h4><h6>A helper method used to create cells with left-aligned text.
+These tables add the company, name, address, and email details for both billing and shipping information.</h6> 
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Another Divider with Dashed Border </h3>
