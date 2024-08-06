@@ -1,19 +1,19 @@
-FF# Pdf-invoice-using-PdfInvoiceCreator-Library
+# Pdf-invoice-using-PdfInvoiceCreator-Library
 <h6>This code generates a structured PDF invoice that includes a watermark, styled text, and multiple tables. It lists products with prices, displays the total amount, and concludes with terms and conditions. Helper methods are used to streamline cell creation and styling, while the Product class models the product data. The iText library is used extensively to manage the PDF creation and layout.</h6>
 
 
 <h3>GeneratePDF: </h3>
-<h6>This is the main class that contains all the logic to generate a PDF file.<br>
-<h4>main(String[] args):</h4>The main method where the program starts executing.<br>
+<h6>This is the main class that contains all the logic to generate a PDF file.<br></h6>
+<h4>main(String[] args):</h4><h6>The main method where the program starts executing.<br>
 throws FileNotFoundException, MalformedURLException: The method declares that it might throw these exceptions, which are checked exceptions in Java.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>PDF Setup </h3>
-<h6><h4>path:</h4> This variable holds the path where the PDF file will be saved.<br>
-<h4>PdfWriter:</h4> This creates a writer instance that writes the PDF to the file specified by path.<br>
-<h4>PdfDocument:</h4> This represents the PDF document itself.<br>
-<h4>setDefaultPageSize(PageSize.A4):</h4> Sets the page size of the PDF to A4.<br>
-<h4>Document:</h4> This is the main class to add content (like paragraphs, tables, etc.) to the PDF.</h6>
+<h4>path:</h4><h6> This variable holds the path where the PDF file will be saved.<br></h6>
+<h4>PdfWriter:</h4> <h6>This creates a writer instance that writes the PDF to the file specified by path.<br></h6>
+<h4>PdfDocument:</h4><h6> This represents the PDF document itself.<br></h6>
+<h4>setDefaultPageSize(PageSize.A4):</h4> <h6>Sets the page size of the PDF to A4.<br></h6>
+<h4>Document:</h4> <h6>This is the main class to add content (like paragraphs, tables, etc.) to the PDF.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Adding a Watermark </h3>
