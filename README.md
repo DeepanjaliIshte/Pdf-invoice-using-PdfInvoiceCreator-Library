@@ -111,3 +111,5 @@ Prints "PDF generated" to the console to indicate successful completion.</h6>
 <h3>Product Class</h3>
 <h4>Product:</h4> <h6>A simple class that holds information about a product, including its name, quantity, and price per piece.</h6>
 <h4>getters and setters:</h4> <h6>Methods to access and modify the product's attributes.</h6>
+
+<img width="305" alt="invoice" src="https://github.com/user-attachments/assets/0702f25d-8802-470a-a90f-61265d8a6489">
