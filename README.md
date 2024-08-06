@@ -51,8 +51,8 @@ The nested table is added as a cell to the main invoice table.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3> Divider Line</h3>
-<h6><h4>SolidBorder: </h4>Creates a solid border with a thickness of 1.8f and color cyan.<br>
-<h4>divider: </h4>Creates a table that serves as a divider line across the page.</h6>
+<h4>SolidBorder: </h4><h6>Creates a solid border with a thickness of 1.8f and color cyan.<br>
+<h4>divider: </h4><h6>Creates a table that serves as a divider line across the page.</h6>
 
 ------------------------------------------------------------------------------------------------------------------------
 <h3>Adding Tables and Information to the Document </h3>
